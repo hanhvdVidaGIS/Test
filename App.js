@@ -29,6 +29,7 @@ const height_screen = Dimensions.get('window').height;
 
 
 async function SubmitLogin(navigation,obj){
+	
   if(obj.email == '' || obj.password == '') return;
   let response = await fetch("http://202.43.108.51:8083/api/login", {
     method: "POST",
